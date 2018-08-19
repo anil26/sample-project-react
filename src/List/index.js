@@ -73,12 +73,12 @@ class List extends React.Component {
     const { selectedIndexes } = this.state;
     const { filteredList, setFilteredList } = this.props;
     const copyList = [...filteredList];
-    const copyListFiltered = copyList.map(element => {
-      if (selectedIndexes[element.id]) {
-        return null;
+    const copyListFiltered = copyList.reduce((acc, element) => {
+      if (!selectedIndexes[element.id]) {
+        acc.push(element);
       }
-      return element;
-    });
+      return acc;
+    }, []);
     this.setState({
       // list: copyListFiltered,
       selectedIndexes: []

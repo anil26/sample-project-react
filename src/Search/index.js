@@ -4,7 +4,6 @@ import "./styles.css";
 
 class Search extends React.Component {
   onSearch = event => {
-    console.log("valuetext", event.target.value);
     const { list, setFilteredList } = this.props;
     const filteredList = list.reduce((acc, campaign) => {
       if (campaign.name.includes(event.target.value)) {
