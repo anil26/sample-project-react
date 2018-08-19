@@ -1,0 +1,46 @@
+.campaign-list {
+  width: 80%;
+  margin: 0px auto;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+table {
+  border: 9px solid #e7e7e7;
+}
+td {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 5px 0px;
+}
+
+th {
+  height: 30px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 5px 0px;
+}
+.name-section {
+  color: blue;
+}
+.edit-btn-section {
+  border-bottom: 1px solid black;
+  border-top: none;
+}
+
+.edit-btn {
+  margin-right: 15px;
+}
+
+.delete {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+.edit-modal label {
+  margin-right: 10px;
+}
+.delete-multiple {
+  width: 80%;
+  margin: 10px auto;
+  text-align: right;
+}
